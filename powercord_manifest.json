@@ -1,7 +1,6 @@
 {
   "name" : "HausuTheme",
-  "description" : "はうすテーマ使ってくれたら本人も喜びます",
-  "author" : "@teampgx",
+  "description" : "Made by Rucy",
+  "author" : "rucykun",
   "theme" : "HausuTheme.theme.css",
-  "license" : "Unlicense"
 }
