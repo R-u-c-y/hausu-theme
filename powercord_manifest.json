@@ -1,0 +1,7 @@
+{
+  "name" : "HausuTheme",
+  "description" : "はうすテーマ使ってくれたら本人も喜びます",
+  "author" : "@teampgx",
+  "theme" : "HausuTheme.theme.css",
+  "license" : "Unlicense"
+}
