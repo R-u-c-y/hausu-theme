@@ -1,17 +1,10 @@
 /**
-* @name HausuTheme
+* @name hausu-theme
 * @description Made by Rucy
-* @source https://github.com/rucykun/HausuTheme
+* @source https://github.com/rucykun/hausu-theme
 */
 
-@import url(https://rucykun.github.io/HausuTheme/build/v3/naat.v3.css);
-
-/*
-  To make editing this theme easier I recommend using Notepad++
-  you can download it for free here https://notepad-plus-plus.org/download/
-*/
-
-/* Any images you use MUST end with .jpg or .png or any other image extension */
+@import url(https://rucykun.github.io/hausu-theme/build/v3/naat.v3.css);
 
 :root {
   /*
@@ -59,14 +52,14 @@
   --font-size: 100%;
 
   /*
-    Mention colors
+    Mention Colors
   */
   --mention-color: rgba(250, 166, 26, 0.05);
   --mention-sider: rgba(250, 166, 26, 1);
   --mention-hover-color: rgba(250, 166, 26, 0.08);
 
   /*
-    Server category hover color
+    Server Category Hover Color
   */
   --category-hover-color: rgb(60, 202, 138);
 
@@ -176,7 +169,7 @@
   --message-search-result-background-color: rgba(200, 200, 200, 0.05);
 
   /*
-    Channel colors
+    Channel Colors
   */
   --text-voice-channel-color: rgb(142, 146, 151);
   --text-voice-channel-hover-color: #dcddde;
