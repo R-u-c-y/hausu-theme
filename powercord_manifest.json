@@ -1,4 +1,8 @@
 {
   "name" : "hausu-theme",
+  "description" : "A easily customizable and automatically updating theme for Discord",
+  "version" : "1.0",
+  "author" : "._.qv2ly",
   "theme" : "hausu-theme.theme.css",
+  "license" : "Unlicense"
 }
