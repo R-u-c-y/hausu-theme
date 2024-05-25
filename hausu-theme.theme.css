@@ -1,56 +1,196 @@
 /**
 * @name hausu-theme
 * @author r-u-c-y
-* @description hausu theme for discord mod client - Custom Background
 * @version 1.0
+* @description An easily customizable and automatically updating theme
+* @invite ZB2v2CpsGZ
 * @source https://github.com/r-u-c-y/hausu-theme
-**/
+*/
 
 @import url(https://r-u-c-y.github.io/hausu-theme/build/v3/naat.v3.css);
 
 :root {
-	--font: 'figtree';
-	--corner-text: 'Midnight';
-	--online-indicator: var(--accent-2); /* change to #23a55a for default green */
-	--dnd-indicator: hsl(340, 60%, 60%); /* change to #f13f43 for default red */
-	--idle-indicator: hsl(50, 60%, 60%); /* change to #f0b232 for default yellow */
-	--streaming-indicator: hsl(260, 60%, 60%); /* change to #593695 for default purple */
-	--accent-1: hsl(190, 70%, 60%); /* links */
-	--accent-2: hsl(190, 70%, 48%); /* general unread/mention elements */
-	--accent-3: hsl(190, 70%, 42%); /* accent buttons */
-	--accent-4: hsl(190, 70%, 36%); /* accent buttons when hovered */
-	--accent-5: hsl(190, 70%, 30%); /* accent buttons when clicked */
-	--mention: hsla(190, 80%, 52%, 0.1); /* mentions & mention messages */
-	--mention-hover: hsla(190, 80%, 52%, 0.05); /* mentions & mention messages when hovered */
-	--text-0: white; /* text on colored elements */
-	--text-1: var(--text-2); /* other normally white text */
-	--text-2: hsl(220, 25%, 70%); /* headings and important text */
-	--text-3: hsl(220, 15%, 60%); /* normal text */
-	--text-4: hsl(220, 15%, 40%); /* icon buttons and channels */
-	--text-5: hsl(220, 15%, 25%); /* muted channels/chats and timestamps */
-	--bg-1: hsl(220, 15%, 20%); /* dark buttons when clicked */
-	--bg-2: hsl(220, 15%, 16%); /* dark buttons */
-	--bg-3: hsl(220, 15%, 13%); /* spacing, secondary elements */
-	--bg-4: hsl(220, 15%, 10%); /* main background color */
-	--hover: hsla(230, 20%, 40%, 0.1); /* channels and buttons when hovered */
-	--active: hsla(220, 20%, 40%, 0.2); /* channels and buttons when clicked or selected */
-	--message-hover: hsla(220, 0%, 0%, 0.1); /* messages when hovered */
-	--spacing: 12px;
-	--list-item-transition: 0.2s ease; /* channels/members/settings hover transition */
-	--unread-bar-transition: 0.2s ease; /* unread bar moving into view transition */
-	--moon-spin-transition: 0.4s ease; /* moon icon spin */
-	--icon-spin-transition: 1s ease; /* round icon button spin (settings, emoji, etc.) */
-	--roundness-xl: 22px; /* roundness of big panel outer corners */
-	--roundness-l: 20px; /* popout panels */
-	--roundness-m: 16px; /* smaller panels, images, embeds */
-	--roundness-s: 12px; /* members, settings inputs */
-	--roundness-xs: 10px; /* channels, buttons */
-	--roundness-xxs: 8px; /* searchbar, small elements */
-	--discord-icon: none; /* discord icon */
-	--moon-icon: block; /* moon icon */
-	--moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg'); /* custom icon url */
-	--moon-icon-size: auto;
-	--login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4); /* login background artwork */
-	--green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43); /* add friend page explore icon */
-	--blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2); /* add friend page school icon */
+  /*
+    Theme Background
+  */
+  --theme-background-image: url(https://i.imgur.com/j1Z6HVc.jpg);
+
+  /*
+    Main Theme Color
+  */
+  --main-theme-color: rgb(67, 181, 129);
+
+  /*
+    Main Theme Transparency
+  */
+  --theme-transparency: rgba(0, 0, 0, 0.8);
+
+  /*
+    Home Icon Image
+  */
+  --home-icon-image: url(https://i.imgur.com/63g6Em8.jpg);
+
+  /*
+    Change your friends icon image position
+  */
+  --home-icon-image-position: center center;
+
+  /*
+    Change your friends icon image zoom
+  */
+  --home-icon-image-zoom: 100%;
+
+  /*
+    Server Listing Width
+    Single Column:  62px
+    Double Column:  126px
+    Triple Column:  184px
+    Quad Column:    242px
+  */
+  --server-listing-width: 126px;
+
+  /*
+    Font Size
+  */
+  --font-size: 100%;
+
+  /*
+    Mention colors
+  */
+  --mention-color: rgba(250, 166, 26, 0.05);
+  --mention-sider: rgba(250, 166, 26, 1);
+  --mention-hover-color: rgba(250, 166, 26, 0.08);
+
+  /*
+    Server category hover color
+  */
+  --category-hover-color: rgb(60, 202, 138);
+
+  /*
+    Change the unread server animation.
+    Replace it with "none" in order to remove any animations and use the main color instead
+  */
+  --unread-server-animation: rainbow;
+
+  /*
+    Video / Screen share buttons
+  */
+  --video-screen-button-background-color: rgba(200, 200, 200, 0.2);
+  --video-screen-button-foreground-color: white;
+  --video-screen-button-background-hovor-color: rgba(200, 200, 200, 0.4);
+  --video-screen-button-foreground-hovor-color: white;
+
+  /*
+    Role Title Color
+  */
+  --member-listing-role-color: var(--main-theme-color);
+
+  /*
+    Small User Popout
+  */
+  --small-user-popout-background-image: var(--theme-background-image);
+  --small-user-popout-background-transparency: rgba(0, 0, 0, 0.6);
+  --small-user-popout-background-image-position: center;
+
+  /*
+    Big User Popout
+  */
+  --big-user-popout-background-image: var(--theme-background-image);
+  --big-user-popout-background-transparency: rgba(0, 0, 0, 0.6);
+  --big-user-popout-background-image-position: center;
+
+  /*
+    Code Markup
+  */
+  --code-markup-background-color: rgba(0, 0, 0, 0.6);
+  --code-markup-border: 1px solid transparent;
+
+  /*
+    Message Box Transparency
+  */
+  --message-box-transparency: rgba(0, 0, 0, 0.6);
+
+  /*
+    Embed Background Transparency
+  */
+  --embed-background-transparency: rgba(0, 0, 0, 0.6);
+
+  /*
+    Message Hover Buttons
+  */
+  --message-hover-buttons-background: rgba(200, 200, 200, 0.1);
+
+  /*
+    Context Menu Transparency
+  */
+  --context-menu-transparency: rgba(15, 15, 15, 0.8);
+
+  /*
+    Add Server / Discovery Icon
+  */
+  --add-discover-icon-transparency: rgba(200, 200, 200, 0.15);
+  --add-discover-icon-color: #43b581;
+
+  /*
+    Channel Limit Number Color
+  */
+  --channel-limit-count-color: var(--channels-default);
+  --channel-limit-background-left: rgba(200, 200, 200, 0.1);
+  --channel-limit-background-right: rgba(200, 200, 200, 0.2);
+
+  /*
+    Scrollbar Colors
+  */
+  --scrollbar-color: rgba(200, 200, 200, 0.2);
+
+  /*
+    Unread Message Divider
+  */
+  --unread-message-divider-color: #f04747;
+  --unread-message-divider-font-color: #fff;
+
+  /*
+    New Messages Bar Color
+  */
+  --new-messages-bar-background-color: #7289da;
+  --new-messages-bar-font-color: #fff;
+
+  /*
+    Emoji Menu
+  */
+  --emoji-menu-background-color: rgba(0, 0, 0, 0.6);
+  --emoji-menu-sider-background-color: rgba(0, 0, 0, 0);
+  --emoji-menu-server-header-background-color: rgba(0, 0, 0, 0.8);
+  --emoji-menu-bottom-bar-background-color: black;
+  --emoji-menu-search-bar-background-color: rgba(200, 200, 200, 0.1);
+
+  /*
+    Message Search
+  */
+  --message-search-menu-background-color: rgba(0, 0, 0, 0.8);
+  --message-search-container-background-color: rgba(0, 0, 0, 0.6);
+  --message-search-result-background-color: rgba(200, 200, 200, 0.05);
+
+  /*
+    Channel colors
+  */
+  --text-voice-channel-color: rgb(142, 146, 151);
+  --text-voice-channel-hover-color: #dcddde;
+  --text-voice-channel-selected-text-color: #fff;
+  --unread-text-channel-color: #fff;
+  --unread-text-channel-bubble-color: var(--main-theme-color);
+
+  /*
+    Folders
+  */
+  --folder-background-color: #2f3136;
+  --expanded-folder-background-color: transparent;
+
+  /*
+    Reactions
+  */
+  --reaction-emoji-background-color: rgba(0, 0, 0, 0);
+  --reaction-emoji-border-color: 1px solid transparent;
+  --reaction-emoji-hover-background-color: rgba(255, 255, 255, 0.1);
+  --reaction-emoji-hover-border-color: rgba(255, 255, 255, 0.2);
 }
