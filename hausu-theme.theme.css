@@ -1,13 +1,11 @@
 /**
 * @name hausu-theme
 * @author ._.qv2ly
-* @version 1.0
 * @description An easily customizable and automatically updating theme
-* @invite jKMQpHaCRt
-* @source https://github.com/r-u-c-y/hausu-theme
+* @source https://github.com/Rucyy/hausu-theme
 */
 
-@import url(https://r-u-c-y.github.io/hausu-theme/build/v3/naat.v3.css);
+@import url(https://rucyy.github.io/hausu-theme/build/v3/naat.v3.css);
 
 :root {
   /*
